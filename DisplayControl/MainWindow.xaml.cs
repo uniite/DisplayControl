@@ -24,6 +24,19 @@ namespace DisplayControl
         public MainWindow()
         {
             InitializeComponent();
+
+
+            var monitors = getMonitors();
+            var acer = monitors[0].hPhysicalMonitor;
+
+            // Get the brightness level info, and adjust the slider to match
+            uint current = 0;
+            uint max = 0;
+            var success = NativeMethods.DDCCIGetVCPFeature(acer, 0x10, 0, ref current, ref max);
+            this.Brightness.Value = current;
+            this.Brightness.Maximum = max;
+
+            cleanupMonitors((uint)monitors.Length, monitors);
         }
 
         public class NativeMethods
@@ -157,12 +170,22 @@ namespace DisplayControl
 
         private void SetInput_Click(object sender, RoutedEventArgs e)
         {
-
             var monitors = getMonitors();
             var acer = monitors[0].hPhysicalMonitor;
 
             // 0x60 = Set Input
             var success = NativeMethods.SetVCPFeature(acer, 0x60, uint.Parse(this.Input.Text));
+
+            cleanupMonitors((uint)monitors.Length, monitors);
+        }
+
+        private void Brightness_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            var monitors = getMonitors();
+            var acer = monitors[0].hPhysicalMonitor;
+
+            // 0x10 = Set Brightness
+            var success = NativeMethods.SetVCPFeature(acer, 0x10, (uint)this.Brightness.Value);
 
             cleanupMonitors((uint)monitors.Length, monitors);
         }

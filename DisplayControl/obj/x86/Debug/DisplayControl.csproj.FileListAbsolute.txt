@@ -1,0 +1,11 @@
+C:\Users\Jon\Documents\Visual Studio 2010\Projects\DisplayControl\DisplayControl\bin\Debug\DisplayControl.exe
+C:\Users\Jon\Documents\Visual Studio 2010\Projects\DisplayControl\DisplayControl\bin\Debug\DisplayControl.pdb
+C:\Users\Jon\Documents\Visual Studio 2010\Projects\DisplayControl\DisplayControl\obj\x86\Debug\MainWindow.baml
+C:\Users\Jon\Documents\Visual Studio 2010\Projects\DisplayControl\DisplayControl\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Jon\Documents\Visual Studio 2010\Projects\DisplayControl\DisplayControl\obj\x86\Debug\App.g.cs
+C:\Users\Jon\Documents\Visual Studio 2010\Projects\DisplayControl\DisplayControl\obj\x86\Debug\DisplayControl_MarkupCompile.cache
+C:\Users\Jon\Documents\Visual Studio 2010\Projects\DisplayControl\DisplayControl\obj\x86\Debug\DisplayControl.g.resources
+C:\Users\Jon\Documents\Visual Studio 2010\Projects\DisplayControl\DisplayControl\obj\x86\Debug\DisplayControl.Properties.Resources.resources
+C:\Users\Jon\Documents\Visual Studio 2010\Projects\DisplayControl\DisplayControl\obj\x86\Debug\DisplayControl.csproj.GenerateResource.Cache
+C:\Users\Jon\Documents\Visual Studio 2010\Projects\DisplayControl\DisplayControl\obj\x86\Debug\DisplayControl.exe
+C:\Users\Jon\Documents\Visual Studio 2010\Projects\DisplayControl\DisplayControl\obj\x86\Debug\DisplayControl.pdb
