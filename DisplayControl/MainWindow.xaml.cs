@@ -189,6 +189,11 @@ namespace DisplayControl
 
             cleanupMonitors((uint)monitors.Length, monitors);
         }
+
+        private void Brightness_Loaded(object sender, RoutedEventArgs e)
+        {
+            Brightness.ValueChanged += Brightness_ValueChanged;
+        }
     }
 }
 
