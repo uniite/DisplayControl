@@ -17,7 +17,7 @@
         <Button Content="Set" Height="33" HorizontalAlignment="Left" Margin="62,170,0,0" Name="SetInput" VerticalAlignment="Top" Width="131" Click="SetInput_Click" Grid.Column="2" />
         <TextBox Height="33" HorizontalAlignment="Left" IsEnabled="True" IsReadOnly="False" Margin="142,170,0,0" Name="Input" VerticalAlignment="Top" Width="174" Grid.Column="1" Grid.ColumnSpan="2" />
         <Label Content="Brightness" FontWeight="Bold" Grid.Column="1" Height="38" HorizontalAlignment="Left" Margin="30,219,0,0" Name="label1" VerticalAlignment="Top" Width="106" />
-        <Slider Grid.Column="1" Height="23" HorizontalAlignment="Right" Margin="0,219,30,0" Name="Brightness" VerticalAlignment="Top" Width="266" Grid.ColumnSpan="2" Value="50" Maximum="100" ValueChanged="Brightness_ValueChanged" SmallChange="1" />
+        <Slider Grid.Column="1" Height="23" HorizontalAlignment="Right" Margin="0,219,30,0" Name="Brightness" VerticalAlignment="Top" Width="266" Grid.ColumnSpan="2" Value="50" Maximum="100" SmallChange="1" Loaded="Brightness_Loaded" />
         <Label Content="{Binding Path=Value, ElementName=Brightness}" FontWeight="Bold" Grid.Column="1" Height="38" HorizontalAlignment="Left" Margin="142,219,0,0" Name="BrightnessDisplay" VerticalAlignment="Top" Width="61" />
     </Grid>
 </Window>
